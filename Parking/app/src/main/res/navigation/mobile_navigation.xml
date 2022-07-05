@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/principal">
+    <fragment
+        android:id="@+id/comenzarEstacionamiento"
+        android:name="com.example.parking.ComenzarEstacionamiento"
+        android:label="fragment_comenzar_estacionamiento"
+        tools:layout="@layout/fragment_comenzar_estacionamiento" />
+    <fragment
+        android:id="@+id/principal"
+        android:name="com.example.parking.Principal"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principal_to_comprarCredito"
+            app:destination="@id/comprarCredito"
+            app:enterAnim="@anim/fragment_fade_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/transacciones"
+        android:name="com.example.parking.Transacciones"
+        android:label=""
+        tools:layout="@layout/fragment_transacciones" >
+        <action
+            android:id="@+id/action_transacciones_to_comprarCredito"
+            app:destination="@id/comprarCredito"
+            app:enterAnim="@anim/fragment_fade_enter" />
+        <action
+            android:id="@+id/action_transacciones_to_movimientos"
+            app:destination="@id/movimientos"
+            app:enterAnim="@anim/fragment_fade_enter" />
+        <action
+            android:id="@+id/action_transacciones_to_transferirCredito"
+            app:destination="@id/transferirCredito"
+            app:enterAnim="@anim/fragment_fade_enter" />
+        <action
+            android:id="@+id/action_transacciones_to_buscarInfracciones"
+            app:destination="@id/buscarInfracciones" />
+        <action
+            android:id="@+id/action_transacciones_to_mapaPuntosVenta"
+            app:destination="@id/mapaPuntosVenta"
+            app:enterAnim="@anim/fragment_fade_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/cuenta"
+        android:name="com.example.parking.Cuenta"
+        tools:layout="@layout/fragment_cuenta" >
+        <action
+            android:id="@+id/action_cuenta_to_transacciones"
+            app:destination="@id/transacciones"
+            app:enterAnim="@anim/fragment_fade_enter" />
+        <action
+            android:id="@+id/action_cuenta_to_administrar_patentes"
+            app:destination="@id/administrar_patentes"
+            app:enterAnim="@anim/fragment_fade_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificaciones"
+        android:name="com.example.parking.Notificaciones"
+        tools:layout="@layout/fragment_notificaciones" />
+    <fragment
+        android:id="@+id/administrar_patentes"
+        android:name="com.example.parking.Administrar_patentes"
+        android:label="fragment_administrar_patentes"
+        tools:layout="@layout/fragment_administrar_patentes" />
+    <fragment
+        android:id="@+id/comprarCredito"
+        android:name="com.example.parking.ComprarCredito"
+        tools:layout="@layout/fragment_comprar_credito" >
+        <action
+            android:id="@+id/action_comprarCredito_to_mercadoPago"
+            app:destination="@id/mercadoPago"
+            app:enterAnim="@anim/fragment_fade_enter" />
+        <action
+            android:id="@+id/action_comprarCredito_to_mapaPuntosVenta"
+            app:destination="@id/mapaPuntosVenta"
+            app:enterAnim="@anim/fragment_fade_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/mercadoPago"
+        android:name="com.example.parking.MercadoPago"
+        android:label="fragment_mercado_pago"
+        tools:layout="@layout/fragment_mercado_pago" />
+    <fragment
+        android:id="@+id/movimientos"
+        android:name="com.example.parking.Movimientos"
+        android:label="fragment_movimientos"
+        tools:layout="@layout/fragment_movimientos" />
+    <fragment
+        android:id="@+id/transferirCredito"
+        android:name="com.example.parking.TransferirCredito"
+        android:label="fragment_transferir_credito"
+        tools:layout="@layout/fragment_transferir_credito" />
+    <fragment
+        android:id="@+id/buscarInfracciones"
+        android:name="com.example.parking.BuscarInfracciones"
+        tools:layout="@layout/fragment_buscar_infracciones" />
+    <fragment
+        android:id="@+id/mapaPuntosVenta"
+        android:name="com.example.parking.MapaPuntosVenta"
+        android:label="fragment_mapa_puntos_venta"
+        tools:layout="@layout/fragment_mapa_puntos_venta" />
+</navigation>

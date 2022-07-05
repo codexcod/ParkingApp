@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5c6bc0</color>
+    <color name="colorPrimaryDark">#26418f</color>
+    <color name="colorAccent">#8e99f3</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="blanco_op">#B8FFFFFF</color>
+    <color name="color_logo">#1F294E</color>
+    <color name="color_registro">#CACACA</color>
+
+    <color name="mercado_pago">#01B1EC</color>
+
+    <color name="verde">#53D582</color>
+    <color name="verde_">#53D582</color>
+
+
+    <color name="clr_otp_bg">#535288</color>
+    <color name="clr_otp_btn_yellow">#F8CD06</color>
+    <color name="clr_white_text">#FFFFFF</color>
+    <color name="clr_grey_text">#D3D3D3</color>
+    <color name="clr_grey_text_transparent">#80D3D3D3</color>
+
+</resources>

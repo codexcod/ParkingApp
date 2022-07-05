@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card_estacionamiento"
+        >
+
+        <ImageView
+            android:id="@+id/img_tipo_de_movimiento"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/img_punto_venta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <TextView
+            android:id="@+id/txt_monto_movimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Monto: $540"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/img_tipo_de_movimiento"
+            app:layout_constraintTop_toTopOf="@+id/img_tipo_de_movimiento" />
+
+        <TextView
+            android:id="@+id/txt_fecha_movimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Fecha : 24/10/2020"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/img_tipo_de_movimiento"
+            app:layout_constraintTop_toBottomOf="@+id/txt_monto_movimiento" />
+
+        <TextView
+            android:id="@+id/txt_estado_movimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Estado : aCancelada"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/img_tipo_de_movimiento"
+            app:layout_constraintTop_toBottomOf="@+id/txt_fecha_movimiento" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

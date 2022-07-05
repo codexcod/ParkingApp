@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cuenta"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_cuenta"
+        android:layout_weight="2"
+        >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/autos_patente_3"
+            app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="+54 11 2470 8693"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/txt_saldo_cuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Saldo : $450"
+            android:textColor="@color/blanco"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_transacciones_cuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton"
+            android:drawableLeft="@drawable/img_dinero"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingLeft="20dp"
+            android:paddingRight="90dp"
+            android:text="Transacciones"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/blanco_op"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_saldo_cuenta" />
+
+        <Button
+            android:id="@+id/btn_administrar_patentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton"
+            android:drawableLeft="@drawable/img_administrar_patentes"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingLeft="20dp"
+            android:paddingRight="40dp"
+            android:text="Administrar patentes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/blanco_op"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_transacciones_cuenta" />
+
+
+
+        <Button
+            android:id="@+id/btn_modificar_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton"
+            android:drawableLeft="@drawable/img_contrasena"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingLeft="20dp"
+            android:paddingRight="40dp"
+            android:text="Modificar contraseña"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/blanco_op"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_administrar_patentes" />
+
+        <Button
+            android:id="@+id/btn_ayuda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton"
+            android:drawableLeft="@drawable/img_ayuda"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingLeft="20dp"
+            android:paddingRight="155dp"
+            android:text="Ayuda"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/blanco_op"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_modificar_contrasena" />
+
+
+        <Button
+            android:id="@+id/btn_cerrar_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton"
+            android:drawableLeft="@drawable/img_cerrar_sesion"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingLeft="20dp"
+            android:paddingRight="100dp"
+            android:text="Cerrar sesion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/blanco_op"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ayuda" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
